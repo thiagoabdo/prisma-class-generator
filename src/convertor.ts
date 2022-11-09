@@ -128,6 +128,10 @@ export class PrismaConvertor {
 				type = `[${type}]`
 			}
 			decorator.params.push(`(type) => ${type}`)
+			/**
+			 * This is a small hack to always make relations optional.
+			 * When trying to use this for a RestApi I had problems of the relation not being present in both sides.
+			 */
 			dmmfField.isRequired = false
 		}
 
