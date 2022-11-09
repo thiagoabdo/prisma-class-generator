@@ -1,3 +1,7 @@
+I created this fork because the main project from kimjbstar was not working for my usecase: restApi with prisma, nestJs and swagger. It was generating some fields that were only for graphQl and relations were kinda funky. This fixes that.
+
+---
+
 # Prisma Class Generator
 
 ## **Prisma**
