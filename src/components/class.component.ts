@@ -22,15 +22,6 @@ export class ClassComponent extends BaseComponent implements Echoable {
 			.replace('#!{NAME}', `${this.name}`)
 			.replace('#!{FIELDS}', fieldContent.join('\r\n'))
 
-		if (this.enumTypes.length > 0) {
-			for (const enumType of this.enumTypes) {
-				str += `registerEnumType(${enumType}, {
-	name: "${enumType}",
-});
-`
-			}
-		}
-
 		return str
 	}
 

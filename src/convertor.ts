@@ -128,6 +128,7 @@ export class PrismaConvertor {
 				type = `[${type}]`
 			}
 			decorator.params.push(`(type) => ${type}`)
+			dmmfField.isRequired = false
 		}
 
 		if (dmmfField.kind === 'enum') {
