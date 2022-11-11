@@ -312,7 +312,7 @@ export class PrismaConvertor {
 			}
 		}
 
-		if (dmmfField.isRequired === false) {
+		if (dmmfField.isRequired === false || dmmfField.relationName) {
 			field.nullable = true
 		}
 

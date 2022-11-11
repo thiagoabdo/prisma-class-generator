@@ -1,6 +1,6 @@
 {
 	"name": "@thiagoabdo/prisma-class-generator",
-	"version": "0.2.1-4",
+	"version": "0.2.1-5",
 	"description": "Class generator from Prisma schema",
 	"main": "dist/index.js",
 	"license": "MIT",
