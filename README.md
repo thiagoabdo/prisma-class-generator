@@ -2,6 +2,20 @@ I created this fork because the main project from kimjbstar was not working for 
 
 ---
 
+For now the workflow to deploy this is not working and I dont have the time to fix it. For me in the future:
+
+To deploy it:
+```
+npx tsc
+# Bump package.json version
+npm pack # Maybe this is optional
+npm publish
+```
+
+Publishing with yarn is not working. When the package is install the bin property is not being respected!
+
+---
+
 # Prisma Class Generator
 
 ## **Prisma**

@@ -1,19 +1,12 @@
 {
-	"compilerOptions": {
-		"target": "es2017",
-		"module": "commonjs",
-		"moduleResolution": "node",
-		"allowSyntheticDefaultImports": true,
-		"baseUrl": "./",
-		"paths": {
-			"@src/*": ["./src/*"]
-		},
-		"outDir": "./dist",
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "lib": ["esnext"],
 		"declaration": true,
 		"diagnostics": false,
 		"traceResolution": false,
 		"listEmittedFiles": false,
-		"locale": "ko",
 		"pretty": true,
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
@@ -37,16 +30,14 @@
 		"sourceMap": true,
 		"forceConsistentCasingInFileNames": true,
 		"allowJs": true,
-		"esModuleInterop": true
-	},
-	"exclude": [
-		"node_modules",
-		"dist",
-		"files",
-		"logs/**",
-		"test",
-		"**/*spec.ts",
+		"esModuleInterop": true,
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "newLine": "lf"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/node_modules", "**/*.test.ts","**/__tests__", "**/dest",
 		"**/_gen/*.ts",
-		"src/_gen/**"
-	]
+		"src/_gen/**"] 
 }
